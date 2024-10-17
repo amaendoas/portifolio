@@ -45,7 +45,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   max-height: 70vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   position: relative;
   gap: 1rem;
   animation: downtop 1s backwards;

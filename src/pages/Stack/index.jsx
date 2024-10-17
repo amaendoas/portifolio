@@ -15,7 +15,7 @@ export function Stack() {
 
       <C.Content>
           {stack.map((item) => (
-            <StackItem key={item.id} title={item.title} icon={item.icon} color={item.color} value={item.value}/>
+            <StackItem key={item.id} title={item.title} icon={item.icon} value={item.value}/>
             ))}
       </C.Content>
     </C.Container>

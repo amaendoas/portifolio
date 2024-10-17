@@ -6,8 +6,8 @@ export function StackItem({icon: Icon, color, title, value}) {
   return (
     <C.Container>
       <C.Item>
-        <Icon size={60} color={color}/>
-        <h2>{title}</h2>
+        <Icon size={45} color="#F28B9D"/>
+        <h3>{title}</h3>
       </C.Item>
       <C.Footer>
         <StarRating value={value}/>
