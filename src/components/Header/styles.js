@@ -6,10 +6,6 @@ export const Container = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.NEUTRAL_700};
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
 
   .active {
     border: 1px solid ${({ theme }) => theme.COLORS.TEXT}; 
@@ -107,4 +103,13 @@ export const Container = styled.div`
     }
   }
 
+`
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
 `

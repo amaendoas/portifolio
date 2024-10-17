@@ -13,40 +13,42 @@ export function Header() {
 
   return(
     <C.Container>
-      <Link to="/" className="logo">
-      <PinkButton title="amaendoas" path="/"/>
-      </Link>
-      <button onClick={() => setShow(!show)} className="button-menu">
-      <img src={`${show ? close : menu}`} alt="menu" />
-      </button>
-      <nav
-      className={`menu navbar ${show ? "show" : "hide"}`}
-      >
-            <NavLink to="/"
-            >
-            <span>&lsaquo;</span>{t("home")}<span>/&rsaquo;</span>
-            </NavLink>
+      <C.Wrapper>
+        <Link to="/" className="logo">
+        <PinkButton title="amaendoas" path="/"/>
+        </Link>
+        <button onClick={() => setShow(!show)} className="button-menu">
+        <img src={`${show ? close : menu}`} alt="menu" />
+        </button>
+        <nav
+        className={`menu navbar ${show ? "show" : "hide"}`}
+        >
+              <NavLink to="/"
+              >
+              <span>&lsaquo;</span>{t("home")}<span>/&rsaquo;</span>
+              </NavLink>
 
-            <NavLink to="/about" >
-            <span>&lsaquo;</span>{t("about")}<span>/&rsaquo;</span>
-            </NavLink>
+              <NavLink to="/about" >
+              <span>&lsaquo;</span>{t("about")}<span>/&rsaquo;</span>
+              </NavLink>
 
-            <NavLink to="/stack">
-            <span>&lsaquo;</span>{t("stack")}<span>/&rsaquo;</span>
-            </NavLink>
+              <NavLink to="/stack">
+              <span>&lsaquo;</span>{t("stack")}<span>/&rsaquo;</span>
+              </NavLink>
 
-            <NavLink to="/projects">
-            <span>&lsaquo;</span>
-            {t("projects")}
-            <span>/&rsaquo;</span>
-            </NavLink>
+              <NavLink to="/projects">
+              <span>&lsaquo;</span>
+              {t("projects")}
+              <span>/&rsaquo;</span>
+              </NavLink>
 
-            <NavLink to="/contact">
-            <span>&lsaquo;</span>
-            {t("contact")}
-            <span>/&rsaquo;</span>
-            </NavLink>
-      </nav>
+              <NavLink to="/contact">
+              <span>&lsaquo;</span>
+              {t("contact")}
+              <span>/&rsaquo;</span>
+              </NavLink>
+        </nav>
+      </C.Wrapper>
     </C.Container>
   )
 }

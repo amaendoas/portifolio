@@ -4,14 +4,11 @@ export const Container = styled.div `
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 52px min-content auto 38px;
+  grid-template-rows: var(--header-height) auto var(--footer-height);
   grid-template-areas:
   "header"
-  "subHeader"
   "content"
   "footer";
-  overflow-x: hidden;
-  overflow-y: hidden;
 
   @keyframes downtop {
     0% {

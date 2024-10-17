@@ -9,6 +9,9 @@ export default createGlobalStyle`
 
   :root {
     font-size: 62.5%;
+    --header-height: 52px;
+    --footer-height: 38px;
+    --max-width: 1400px;
   }
 
   html {
@@ -62,4 +65,12 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
+  
+  .page-container {
+      height: calc(100vh - var(--header-height) - var(--footer-height));
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem;
+  }
+  
 `

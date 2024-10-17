@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: fit-content;
+  height: fit-content;
   padding: 0.5rem 2rem;
   border-width: 1px;
   border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};;
-  margin: 2rem 0 0 2rem;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   animation: downtop 1s backwards;
 
   h1 {
@@ -16,13 +16,5 @@ export const Container = styled.div`
 
   span {
     color: ${({ theme }) => theme.COLORS.PINK_P};
-  }
-
-  @media (min-width: 800px) {
-    margin-left: 4rem;
-  }
-
-  @media (min-width: 1080px) {
-    margin-left: 6rem;
   }
 `

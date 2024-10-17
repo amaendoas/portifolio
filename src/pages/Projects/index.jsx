@@ -14,7 +14,7 @@ export function Projects() {
 
   return (
     <Theme>
-    <C.Container>
+    <C.Container className="page-container">
       <C.Title>
         <Title title={t("projectsTitle")}/>
         <img src={folders} alt="folders" className="folders"/>

@@ -1,7 +1,6 @@
 import * as C from "./styles"
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si"
 import { HiOutlineMail } from "react-icons/hi"
-import { useState } from "react"
 
 
 

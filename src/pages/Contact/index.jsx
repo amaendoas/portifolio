@@ -74,6 +74,8 @@ export function Contact() {
       {
         alertText && <Alert text={alertText} isSuccess={alertSuccess} onClick={() => setAlertText("")}/>
       }
+
+      <div className="page-container">
       <Title title={t("titleContact")}/>
       <C.Content>
         <Screen>
@@ -113,6 +115,7 @@ export function Contact() {
           </C.Form>
         </Screen>
       </C.Content>
+      </div>
     </C.Container>
     </Theme>
   )

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: 2rem;
   width: 22rem;
   height: 25rem;
   background-color: ${({theme}) => theme.COLORS.GREEN_S};
